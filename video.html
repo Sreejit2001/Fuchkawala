@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe</title>
+    <link rel="stylesheet" href="video.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script>
+        const name = sessionStorage.getItem('username')
+        if (name == null) {
+            window.location.href = "index.html";
+        }
+    </script>
+</head>
+
+<body style="background-color: #ebcb2a;">
+    <nav class="navbar fixed-top" style="background-color:white">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">
+                <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+              </a>-->
+            <h2 id="title"><b>ফুচকা<i>wala</i></b></h2>
+            <form class="d-flex">
+                <input type="text" id="search-item" style="width: 250px;" class="form-control me-2" placeholder="Search" onkeyup="search()">
+                <!--  <button id="searchbtn" class="btn btn-outline-success" type="submit">Search</button>-->
+                <button id="logbtn" class="btn btn-success" type="button" onclick="logout()">Logout</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div id="product-list">
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct" >Chicken Fuchka</h2>
+            </div>
+        </div>
+         
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Corn Cheese Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Chicken Cheese Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Bangladeshi Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Khatamitha Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Dahi Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Dhaniya Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Ice-cream Fuchka</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="Chicken Cheese Sandwich.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">Chicken Cheese Sandwich</h2>
+            </div>
+        </div>
+        <div class="product">
+            <video class="video-box" width="400" height="250" controls controlsList="nodownload">
+                <source src="movie.mp4" type="video/mp4">
+            </video>
+            <div class="p-details">
+                <h2 class="tittleproduct">comming soon</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

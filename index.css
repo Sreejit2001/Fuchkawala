@@ -1,0 +1,119 @@
+body{
+    background-color: #ebcb2a;
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  .container{
+     
+    margin: auto;
+  }
+  #title{
+    color:rgb(214, 11, 11);  
+    text-shadow: 2px 2px 2px black;
+    }
+    #uname ,#pass{
+      font-weight: bold;
+      color: black;
+       
+    }
+    ::placeholder{
+      font-weight:normal;
+    }
+    #uname:active{
+      border: 2px solid #308101;
+      
+    }
+    .button-63 {
+      align-items: center;
+      background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+      border: 0;
+      border-radius: 8px;
+      box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+      box-sizing: border-box;
+      color: #FFFFFF;
+      display: flex;
+      font-family: Phantomsans, sans-serif;
+      font-size: 20px;
+      justify-content: center;
+      line-height: .5em;
+      max-width: 100%;
+      min-width: 100%;
+      padding: 19px 24px;
+      text-decoration: none;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    
+    .button-63:active,
+    .button-63:hover {
+      outline: 0;
+    }
+    
+    @media (min-width: 768px) {
+      .button-63 {
+        font-size: 24px;
+        min-width: 70%;
+      }
+    }
+
+/*show password check box design*/
+  .checkbox-wrapper-21 .control {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  .checkbox-wrapper-21 .control input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  .checkbox-wrapper-21 .control__indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+  }
+  .checkbox-wrapper-21 .control:hover input ~ .control__indicator,
+  .checkbox-wrapper-21 .control input:focus ~ .control__indicator {
+    background: #ccc;
+  }
+  .checkbox-wrapper-21 .control input:checked ~ .control__indicator {
+    background: #2aa1c0;
+  }
+  .checkbox-wrapper-21 .control:hover input:not([disabled]):checked ~ .control__indicator,
+  .checkbox-wrapper-21 .control input:checked:focus ~ .control__indicator {
+    background: #0e647d;
+  }
+  .checkbox-wrapper-21 .control input:disabled ~ .control__indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .checkbox-wrapper-21 .control__indicator:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  .checkbox-wrapper-21 .control input:checked ~ .control__indicator:after {
+    display: block;
+  }
+  .checkbox-wrapper-21 .control--checkbox .control__indicator:after {
+    left: 8px;
+    top: 4px;
+    width: 3px;
+    height: 8px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+  .checkbox-wrapper-21 .control--checkbox input:disabled ~ .control__indicator:after {
+    border-color: #7b7b7b;
+  }
